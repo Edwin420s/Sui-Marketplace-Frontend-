@@ -1,19 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind base styles */
+/*
+  The following @tailwind directives require processing by Tailwind CSS.
+  Make sure your build tool (like PostCSS) is configured to use Tailwind.
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Custom styles */
 
+/* Global styles */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #0A192F;
   color: #ccd6f6;
 }
 
+/* Gradient background utility */
 .gradient-bg {
   background: linear-gradient(135deg, #0A192F 0%, #112240 100%);
 }
 
+/* Card hover effect */
 .card-hover {
   transition: all 0.3s ease;
 }
