@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,12 +14,18 @@ const HeroSection: React.FC = () => {
           Experience the future of digital ownership.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-sui-blue text-sui-navy font-medium py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition-colors">
+          <Link 
+            to="/marketplace" 
+            className="bg-sui-blue text-sui-navy font-medium py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition-colors"
+          >
             Explore Marketplace
-          </button>
-          <button className="bg-transparent border border-sui-blue text-sui-blue font-medium py-3 px-8 rounded-lg text-lg hover:bg-sui-blue hover:text-sui-navy transition-colors">
+          </Link>
+          <Link 
+            to="/my-items" 
+            className="bg-transparent border border-sui-blue text-sui-blue font-medium py-3 px-8 rounded-lg text-lg hover:bg-sui-blue hover:text-sui-navy transition-colors"
+          >
             Create Listing
-          </button>
+          </Link>
         </div>
       </div>
     </section>

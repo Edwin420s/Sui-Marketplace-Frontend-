@@ -7,9 +7,18 @@ interface ItemCardProps {
   seller: string;
   image?: string;
   onBuy?: () => void;
+  customButton?: React.ReactNode;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, seller, image, onBuy }) => {
+const ItemCard: React.FC<ItemCardProps> = ({ 
+  id, 
+  name, 
+  price, 
+  seller, 
+  image, 
+  onBuy, 
+  customButton 
+}) => {
   const truncateAddress = (address: string) => {
     return `${address.slice(0, 6)}...${address.slice(-4)}`;
   };
@@ -33,12 +42,14 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, seller, image, onB
           <span className="text-sui-slate text-sm">Seller</span>
           <span className="text-sui-light-slate text-sm">{truncateAddress(seller)}</span>
         </div>
-        <button
-          onClick={onBuy}
-          className="w-full mt-4 bg-sui-blue text-sui-navy font-medium py-2 rounded-lg hover:bg-opacity-90 transition-colors"
-        >
-          Buy Now
-        </button>
+        {customButton || (
+          <button
+            onClick={onBuy}
+            className="w-full mt-4 bg-sui-blue text-sui-navy font-medium py-2 rounded-lg hover:bg-opacity-90 transition-colors"
+          >
+            Buy Now
+          </button>
+        )}
       </div>
     </div>
   );
