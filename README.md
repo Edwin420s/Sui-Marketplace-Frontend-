@@ -3,21 +3,21 @@
 A React + TypeScript + Tailwind CSS frontend for a decentralized marketplace built on the Sui blockchain. This dApp allows users to mint, list, buy, and manage digital assets through a sleek, modern interface.
 
 **🌟 Features**
-Wallet Integration: Connect with Sui-compatible wallets
-Mint Demo NFTs: Create test widgets for marketplace trading
-List Items: Set your digital assets for sale with custom pricing
-Browse Marketplace: Explore all available listings
-Buy Items: Purchase digital assets from other users
-Manage Listings: Delist your items from the marketplace
-Withdraw Profits: Claim your earnings from successful sales
+-Wallet Integration: Connect with Sui-compatible wallets
+-Mint Demo NFTs: Create test widgets for marketplace trading
+-List Items: Set your digital assets for sale with custom pricing
+-Browse Marketplace: Explore all available listings
+-Buy Items: Purchase digital assets from other users
+-Manage Listings: Delist your items from the marketplace
+-Withdraw Profits: Claim your earnings from successful sales
 
 **🛠 Tech Stack**
-Framework: React 18 + TypeScript
-Build Tool: Vite
-Styling: Tailwind CSS
-Wallet Integration: @mysten/wallet-kit
-Blockchain SDK: @mysten/sui.js
-State Management: React Context API + Hooks
+-Framework: React 18 + TypeScript
+-Build Tool: Vite
+-Styling: Tailwind CSS
+-Wallet Integration: @mysten/wallet-kit
+-Blockchain SDK: @mysten/sui.js
+-State Management: React Context API + Hooks
 
 **📁 Project Structure**
 ```
