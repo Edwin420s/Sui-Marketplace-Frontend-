@@ -1,8 +1,8 @@
-#**Sui Marketplace dApp - Frontend**
+**Sui Marketplace dApp - Frontend**
 
 A React + TypeScript + Tailwind CSS frontend for a decentralized marketplace built on the Sui blockchain. This dApp allows users to mint, list, buy, and manage digital assets through a sleek, modern interface.
 
-##**🌟 Features**
+**🌟 Features**
 Wallet Integration: Connect with Sui-compatible wallets
 Mint Demo NFTs: Create test widgets for marketplace trading
 List Items: Set your digital assets for sale with custom pricing
@@ -67,14 +67,15 @@ Clone the repository:
 ```
 git clone https://github.com/Edwin420s/Sui-Marketplace-fronted.git
 cd sui-marketplace-frontend
+```
 Install dependencies:
-
+```
 npm install
 ```
 Configure environment variables:
 Create a **.env** file in the root directory:
 
-env
+.env
 ```
 VITE_SUI_NETWORK=devnet # or testnet/mainnet
 VITE_MARKETPLACE_PACKAGE_ID=your_package_id_here
@@ -94,7 +95,7 @@ npm run dev
 ```
 Open your browser and navigate to http://localhost:3000
 
-🎨 Design System
+**🎨 Design System**
 The application uses a custom Sui-themed color palette:
 
 Primary Blue: #00AEEF (Sui Blue)
@@ -103,14 +104,14 @@ Light Navy: #112240 (Cards & Components)
 Slate Text: #8892b0 (Secondary text)
 Light Slate: #a8b2d1 (Primary text)
 
-🔌 Wallet Integration
+**🔌 Wallet Integration**
 The dApp uses @mysten/wallet-kit for seamless wallet integration. Supported wallets include:
 Suiet Wallet
 Ethos Wallet
 Mysten Wallet
 Any Wallet Standard-compatible wallet
 
-📱 Pages Overview
+**📱 Pages Overview**
 Home Page (/)
 Welcome message and introduction
 Featured marketplace items
@@ -119,31 +120,24 @@ Wallet connection prompt
 Marketplace Page (/marketplace)
 Browse all active listings
 
-Filter and search functionality
+**Filter and search functionality**
 
-Buy items directly
-
+**Buy items directly**
 Responsive grid layout
-
 My Items Page (/my-items)
 View owned NFTs/Widgets
 
-List items for sale
-
+**List items for sale**
 Manage existing listings
-
 Mint new demo widgets
-
 Earnings Page (/earnings)
 View sales history
 
-Check available profits
-
+**Check available profits**
 Withdraw earnings
-
 Transaction history
 
-🧩 Core Components
+**🧩 Core Components**
 WalletButton
 Handles wallet connection and disconnection, displays wallet address and balance.
 
@@ -156,14 +150,14 @@ Modal form for creating new listings with price input and confirmation.
 Navbar
 Global navigation with links to all pages and wallet connection.
 
-🔄 State Management
+**🔄 State Management**
 The application uses React Context for state management:
 
 WalletContext: Manages wallet connection state, address, and balance
 
 MarketplaceContext: Handles marketplace data, listings, and user items
 
-📡 Blockchain Interactions
+**📡 Blockchain Interactions**
 The dApp interacts with these Move modules:
 
 marketplace.move
@@ -178,26 +172,31 @@ take_profits_and_keep: Withdraw earnings
 marketplaceWidget.move
 mint: Create a demo NFT/Widget for testing
 
-🛠 Development Scripts
-bash
+**🛠 Development Scripts**
+```
 npm run dev      # Start development server
 npm run build    # Build for production
 npm run preview  # Preview production build
 npm run lint     # Run ESLint
-🌐 Deployment
+```
+
+**🌐 Deployment**
+
 Build for Production
-bash
+```
 npm run build
+```
 The build output will be in the dist/ directory, ready for deployment to any static hosting service like Vercel, Netlify, or GitHub Pages.
 
 Environment Setup for Production
 Ensure these environment variables are set in your hosting platform:
-
+```
 VITE_SUI_NETWORK: Sui network (devnet/testnet/mainnet)
 
 VITE_MARKETPLACE_PACKAGE_ID: Your marketplace package ID
 
 VITE_MARKETPLACE_WIDGET_PACKAGE_ID: Your widget package ID
+```
 
 🤝 Contributing
 Fork the repository
